@@ -1,6 +1,5 @@
 PODS:
   - boost (1.83.0)
-  - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.73.10)
   - FBReactNativeSpec (0.73.10):
@@ -10,69 +9,72 @@ PODS:
     - React-Core (= 0.73.10)
     - React-jsi (= 0.73.10)
     - ReactCommon/turbomodule/core (= 0.73.10)
-  - Flipper (0.201.0):
-    - Flipper-Folly (~> 2.6)
-  - Flipper-Boost-iOSX (1.76.0.1.11)
-  - Flipper-DoubleConversion (3.2.0.1)
-  - Flipper-Fmt (7.1.7)
-  - Flipper-Folly (2.6.10):
-    - Flipper-Boost-iOSX
-    - Flipper-DoubleConversion
-    - Flipper-Fmt (= 7.1.7)
-    - Flipper-Glog
-    - libevent (~> 2.1.12)
-    - OpenSSL-Universal (= 1.1.1100)
-  - Flipper-Glog (0.5.0.5)
-  - Flipper-PeerTalk (0.0.4)
-  - FlipperKit (0.201.0):
-    - FlipperKit/Core (= 0.201.0)
-  - FlipperKit/Core (0.201.0):
-    - Flipper (~> 0.201.0)
-    - FlipperKit/CppBridge
-    - FlipperKit/FBCxxFollyDynamicConvert
-    - FlipperKit/FBDefines
-    - FlipperKit/FKPortForwarding
-    - SocketRocket (~> 0.6.0)
-  - FlipperKit/CppBridge (0.201.0):
-    - Flipper (~> 0.201.0)
-  - FlipperKit/FBCxxFollyDynamicConvert (0.201.0):
-    - Flipper-Folly (~> 2.6)
-  - FlipperKit/FBDefines (0.201.0)
-  - FlipperKit/FKPortForwarding (0.201.0):
-    - CocoaAsyncSocket (~> 7.6)
-    - Flipper-PeerTalk (~> 0.0.4)
-  - FlipperKit/FlipperKitHighlightOverlay (0.201.0)
-  - FlipperKit/FlipperKitLayoutHelpers (0.201.0):
-    - FlipperKit/Core
-    - FlipperKit/FlipperKitHighlightOverlay
-    - FlipperKit/FlipperKitLayoutTextSearchable
-  - FlipperKit/FlipperKitLayoutIOSDescriptors (0.201.0):
-    - FlipperKit/Core
-    - FlipperKit/FlipperKitHighlightOverlay
-    - FlipperKit/FlipperKitLayoutHelpers
-  - FlipperKit/FlipperKitLayoutPlugin (0.201.0):
-    - FlipperKit/Core
-    - FlipperKit/FlipperKitHighlightOverlay
-    - FlipperKit/FlipperKitLayoutHelpers
-    - FlipperKit/FlipperKitLayoutIOSDescriptors
-    - FlipperKit/FlipperKitLayoutTextSearchable
-  - FlipperKit/FlipperKitLayoutTextSearchable (0.201.0)
-  - FlipperKit/FlipperKitNetworkPlugin (0.201.0):
-    - FlipperKit/Core
-  - FlipperKit/FlipperKitReactPlugin (0.201.0):
-    - FlipperKit/Core
-  - FlipperKit/FlipperKitUserDefaultsPlugin (0.201.0):
-    - FlipperKit/Core
-  - FlipperKit/SKIOSNetworkPlugin (0.201.0):
-    - FlipperKit/Core
-    - FlipperKit/FlipperKitNetworkPlugin
+  - Firebase/Auth (11.3.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 11.3.0)
+  - Firebase/CoreOnly (11.3.0):
+    - FirebaseCore (= 11.3.0)
+  - Firebase/Database (11.3.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 11.3.0)
+  - FirebaseAppCheckInterop (11.3.0)
+  - FirebaseAuth (11.3.0):
+    - FirebaseAppCheckInterop (~> 11.0)
+    - FirebaseAuthInterop (~> 11.0)
+    - FirebaseCore (~> 11.0)
+    - FirebaseCoreExtension (~> 11.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.0)
+    - GoogleUtilities/Environment (~> 8.0)
+    - GTMSessionFetcher/Core (~> 3.4)
+    - RecaptchaInterop (~> 100.0)
+  - FirebaseAuthInterop (11.3.0)
+  - FirebaseCore (11.3.0):
+    - FirebaseCoreInternal (~> 11.0)
+    - GoogleUtilities/Environment (~> 8.0)
+    - GoogleUtilities/Logger (~> 8.0)
+  - FirebaseCoreExtension (11.3.0):
+    - FirebaseCore (~> 11.0)
+  - FirebaseCoreInternal (11.3.0):
+    - "GoogleUtilities/NSData+zlib (~> 8.0)"
+  - FirebaseDatabase (11.3.0):
+    - FirebaseAppCheckInterop (~> 11.0)
+    - FirebaseCore (~> 11.0)
+    - FirebaseSharedSwift (~> 11.0)
+    - GoogleUtilities/UserDefaults (~> 8.0)
+    - leveldb-library (~> 1.22)
+  - FirebaseSharedSwift (11.3.0)
   - fmt (6.2.1)
   - glog (0.3.5)
+  - GoogleUtilities/AppDelegateSwizzler (8.0.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Environment (8.0.2):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Logger (8.0.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Network (8.0.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Privacy
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (8.0.2)":
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Privacy (8.0.2)
+  - GoogleUtilities/Reachability (8.0.2):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/UserDefaults (8.0.2):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Privacy
+  - GTMSessionFetcher/Core (3.5.0)
   - hermes-engine (0.73.10):
     - hermes-engine/Pre-built (= 0.73.10)
   - hermes-engine/Pre-built (0.73.10)
+  - leveldb-library (1.22.5)
   - libevent (2.1.12)
-  - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2022.05.16.00):
     - boost
     - DoubleConversion
@@ -944,6 +946,8 @@ PODS:
   - React-Mapbuffer (0.73.10):
     - glog
     - React-debug
+  - react-native-safe-area-context (4.11.1):
+    - React-Core
   - React-nativeconfig (0.73.10)
   - React-NativeModulesApple (0.73.10):
     - glog
@@ -1111,6 +1115,27 @@ PODS:
     - React-jsi (= 0.73.10)
     - React-logger (= 0.73.10)
     - React-perflogger (= 0.73.10)
+  - RecaptchaInterop (100.0.0)
+  - RNFBApp (21.2.0):
+    - Firebase/CoreOnly (<= 11.3.0)
+    - React-Core
+  - RNFBAuth (21.2.0):
+    - Firebase/Auth (<= 11.3.0)
+    - React-Core
+    - RNFBApp
+  - RNFBDatabase (21.2.0):
+    - Firebase/Database (<= 11.3.0)
+    - React-Core
+    - RNFBApp
+  - RNGestureHandler (2.20.0):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
+  - RNScreens (3.34.0):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
+    - React-RCTImage
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
 
@@ -1119,30 +1144,9 @@ DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
-  - Flipper (= 0.201.0)
-  - Flipper-Boost-iOSX (= 1.76.0.1.11)
-  - Flipper-DoubleConversion (= 3.2.0.1)
-  - Flipper-Fmt (= 7.1.7)
-  - Flipper-Folly (= 2.6.10)
-  - Flipper-Glog (= 0.5.0.5)
-  - Flipper-PeerTalk (= 0.0.4)
-  - FlipperKit (= 0.201.0)
-  - FlipperKit/Core (= 0.201.0)
-  - FlipperKit/CppBridge (= 0.201.0)
-  - FlipperKit/FBCxxFollyDynamicConvert (= 0.201.0)
-  - FlipperKit/FBDefines (= 0.201.0)
-  - FlipperKit/FKPortForwarding (= 0.201.0)
-  - FlipperKit/FlipperKitHighlightOverlay (= 0.201.0)
-  - FlipperKit/FlipperKitLayoutPlugin (= 0.201.0)
-  - FlipperKit/FlipperKitLayoutTextSearchable (= 0.201.0)
-  - FlipperKit/FlipperKitNetworkPlugin (= 0.201.0)
-  - FlipperKit/FlipperKitReactPlugin (= 0.201.0)
-  - FlipperKit/FlipperKitUserDefaultsPlugin (= 0.201.0)
-  - FlipperKit/SKIOSNetworkPlugin (= 0.201.0)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
-  - OpenSSL-Universal (= 1.1.1100)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCT-Folly/Fabric (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -1151,7 +1155,6 @@ DEPENDENCIES:
   - React-callinvoker (from `../node_modules/react-native/ReactCommon/callinvoker`)
   - React-Codegen (from `build/generated/ios`)
   - React-Core (from `../node_modules/react-native/`)
-  - React-Core/DevSupport (from `../node_modules/react-native/`)
   - React-Core/RCTWebSocket (from `../node_modules/react-native/`)
   - React-CoreModules (from `../node_modules/react-native/React/CoreModules`)
   - React-cxxreact (from `../node_modules/react-native/ReactCommon/cxxreact`)
@@ -1167,6 +1170,7 @@ DEPENDENCIES:
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector-modern`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
+  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-nativeconfig (from `../node_modules/react-native/ReactCommon`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -1187,22 +1191,30 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
+  - "RNFBAuth (from `../node_modules/@react-native-firebase/auth`)"
+  - "RNFBDatabase (from `../node_modules/@react-native-firebase/database`)"
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
-    - CocoaAsyncSocket
-    - Flipper
-    - Flipper-Boost-iOSX
-    - Flipper-DoubleConversion
-    - Flipper-Fmt
-    - Flipper-Folly
-    - Flipper-Glog
-    - Flipper-PeerTalk
-    - FlipperKit
+    - Firebase
+    - FirebaseAppCheckInterop
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseCoreExtension
+    - FirebaseCoreInternal
+    - FirebaseDatabase
+    - FirebaseSharedSwift
     - fmt
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - leveldb-library
     - libevent
-    - OpenSSL-Universal
+    - RecaptchaInterop
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1261,6 +1273,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/logger"
   React-Mapbuffer:
     :path: "../node_modules/react-native/ReactCommon"
+  react-native-safe-area-context:
+    :path: "../node_modules/react-native-safe-area-context"
   React-nativeconfig:
     :path: "../node_modules/react-native/ReactCommon"
   React-NativeModulesApple:
@@ -1301,72 +1315,91 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/utils"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNFBApp:
+    :path: "../node_modules/@react-native-firebase/app"
+  RNFBAuth:
+    :path: "../node_modules/@react-native-firebase/auth"
+  RNFBDatabase:
+    :path: "../node_modules/@react-native-firebase/database"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
   boost: d3f49c53809116a5d38da093a8aa78bf551aed09
-  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
   FBLazyVector: c039b29a5b130f817a6b07dd7bc33830a969ab27
   FBReactNativeSpec: 0368d296aba294bab9067f575175422a4754db27
-  Flipper: c7a0093234c4bdd456e363f2f19b2e4b27652d44
-  Flipper-Boost-iOSX: fd1e2b8cbef7e662a122412d7ac5f5bea715403c
-  Flipper-DoubleConversion: 2dc99b02f658daf147069aad9dbd29d8feb06d30
-  Flipper-Fmt: 60cbdd92fc254826e61d669a5d87ef7015396a9b
-  Flipper-Folly: 584845625005ff068a6ebf41f857f468decd26b3
-  Flipper-Glog: 70c50ce58ddaf67dc35180db05f191692570f446
-  Flipper-PeerTalk: 116d8f857dc6ef55c7a5a75ea3ceaafe878aadc9
-  FlipperKit: 37525a5d056ef9b93d1578e04bc3ea1de940094f
+  Firebase: 5c575140761e22324806f401e38c483d58db2dec
+  FirebaseAppCheckInterop: 7789a8adfb09e905ce02a76540b94b059029ea81
+  FirebaseAuth: c7b82c8f3942c22629145c3f2972c33d1dc3ee6c
+  FirebaseAuthInterop: c453b7ba7c49b88b2f519bb8d2e29edf7ada4a2a
+  FirebaseCore: 8542de610f35f86196ba26cdb2544565a5157c8e
+  FirebaseCoreExtension: 30bb063476ef66cd46925243d64ad8b2c8ac3264
+  FirebaseCoreInternal: ac26d09a70c730e497936430af4e60fb0c68ec4e
+  FirebaseDatabase: 33b92c5a719fb0c2d7f67e86bf6bcc70d7772998
+  FirebaseSharedSwift: d39c2ad64a11a8d936ce25a42b00df47078bb59c
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: c5d68082e772fa1c511173d6b30a9de2c05a69a2
+  GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
+  GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
   hermes-engine: 42a7a4cbe3e20050fb031f64aaaffbe0c0b4a38f
+  leveldb-library: e8eadf9008a61f9e1dde3978c086d2b6d9b9dc28
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 7169b2b1c44399c76a47b5deaaba715eeeb476c0
   RCTRequired: 3c70a68a1acbfe8dec71921ddaf955ddceb6a8bd
   RCTTypeSafety: 6b502ff289b30da23609b707734e9c04089baa4f
   React: 8191d2b9cc390ec0304b6d96c2f9bc58f4397a18
   React-callinvoker: 95b82d703fdac0037485ab4eaca47dafa4258ec6
-  React-Codegen: b05c5b21f50f8b67cbae257253d78d2148794457
+  React-Codegen: 62975d5bc4bab5fa2a0e46ba609ee796f096eb20
   React-Core: 6e339dc0fd4de5588c59543ecf8a3ed5b4e2f8b2
   React-CoreModules: 507eaf1e5b73008e31c4de9da54f217a31ff1c20
   React-cxxreact: 1ca0528a6725ded005ae4e5112b55c24649a852c
-  React-debug: 460fea66d43ad2c5ba39b6ab3886ec3cbe680ea3
-  React-Fabric: 8cd4516a0be8a2b38d70f2e029173a35253e3cfa
-  React-FabricImage: cc9c4325fa40eba64b87b1a0670896e1faa5ac99
-  React-graphics: 700ba8c0f89634a18025bd1524357230a1922323
+  React-debug: 6e0922994d2ab955747883e0517fd21238fae929
+  React-Fabric: 720174dff74ca252cf3a04aeedfca029f9c542af
+  React-FabricImage: 1576c72ee81ebd5f9a0b6c1caf761b7f42ab9b46
+  React-graphics: a001bada262e5dff1b10d81f79017a965908b4fc
   React-hermes: cd9f6f6827ee0970a871dd8e900f9b5053d9c531
-  React-ImageManager: 49620e9ff67538597a08d0ac9b8fc4a66a47d8e6
-  React-jserrorhandler: 42d672b71f6b9f0bbba6f7b284d5ed2c3ac335bb
+  React-ImageManager: 717aebc361a24ad5461177a90998fe18fa6caec6
+  React-jserrorhandler: 5061762e8428950a5dede8e34baefc572c7a1667
   React-jsi: fc680b7d89e7e96be5747684d2a1d25fa50d490c
   React-jsiexecutor: 644b1742d3fe8e30a6afc8c0f441ee6813eb28a2
   React-jsinspector: 71e5fb28b810fa199987e600ec8a6e17abee373e
   React-logger: 82babb1e3fad0e04750981f24e6c38f644a0bf7c
-  React-Mapbuffer: 758750eb32350b01dd9c350010aecc46842047bd
-  React-nativeconfig: a596be0c98c050b80bc7e262d46a53d4df4ff712
-  React-NativeModulesApple: 4829cef81c8a322029300b6ff1c5f28768fca85b
+  React-Mapbuffer: 55df942d301eabd92a54afdddb6649f8bd80024f
+  react-native-safe-area-context: 5141f11858b033636f1788b14f32eaba92cee810
+  React-nativeconfig: 17dad99b6e664896b693a7dd43bd54c5c6739c52
+  React-NativeModulesApple: fb6ad150e1a4c04c206d536dfc683fdc221e7ece
   React-perflogger: 27b852c78b7be9e0b326e3102c6551529f371f95
   React-RCTActionSheet: a9af61d47af3f2facfd7d8b6f913d60956779fc6
   React-RCTAnimation: ed02ba9e344aa38426660b73512988d86b31d398
   React-RCTAppDelegate: 0e85ca8ba0a451987b6627566490cdc82cdcff21
   React-RCTBlob: e766d412c0b500e87f368f3066701db6eae6a8e5
-  React-RCTFabric: 26de835bb8ad95cb0153eee2efdcf147e8369b24
+  React-RCTFabric: 89ae189b9fa69ba25644a4b6bd2f83cd9e560b88
   React-RCTImage: 8721486d3e76e5fe8d15b5545a9a397174011297
   React-RCTLinking: 23e25137b35564a61ae30269b51b2eecc5e5aaa6
   React-RCTNetwork: f99ce4135920848ece60a9fbd3d3bd4cf1cb015a
   React-RCTSettings: c6eb7710df4b5a3306872ab2c65fcdcae3428459
   React-RCTText: 3fc5f2629ba3732e2c92c4c2046be2171e8b14d3
   React-RCTVibration: 491df80515fa282bac06bb8652cbf73118b15d8e
-  React-rendererdebug: 6811c7970cd72f747833775b8de47c9d0d63df20
-  React-rncore: 589b9a8a6cf7fe5a472bb54c73ba91c98d241b5d
+  React-rendererdebug: 72821a50f9fc4b664a8431354add3894e4638bbc
+  React-rncore: bfa03119243026983387b7039934494acbd375d2
   React-runtimeexecutor: 493b548fb6f1aaf94ba57cc9208ad5b89046e2be
-  React-runtimescheduler: 639000d08f94ee18017fad4c691c572bb6dfbe50
-  React-utils: c3a9bede4e9aa5c0a8184958cd4c09ff461fd60f
-  ReactCommon: 92194c3d756b82bff5b75450544b2863b4df0d5f
+  React-runtimescheduler: a9c087d084d1c4df541a10df228015c4442f1384
+  React-utils: 3b1aa28b3ad14400a56b57a3aa5d352f2b17d27d
+  ReactCommon: fc5161832d47a6ea41b055a0df1de76429661c96
+  RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
+  RNFBApp: a60c85b86719a8fd69e2e5535c3d5fbfa22a9fee
+  RNFBAuth: 6e97f9b40151eb5362a822617c8c21e70c8ffbe4
+  RNFBDatabase: ac2e0e01df2337e37b24ec8e35e41349ceca3f82
+  RNGestureHandler: 79c035e2243d3b7f4f353e7eb32869eace6b596c
+  RNScreens: b7eeec2c5d2658dac8c30d2de57dcaabd368d239
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  Yoga: 66a97477b94264cc4e49990c8fe6b153260d871d
+  Yoga: ec766f19cbb575e83fccf96d30dc769e66941e0f
 
-PODFILE CHECKSUM: 037d4552dca5806993f2a77b18b50a9ffb82946e
+PODFILE CHECKSUM: 9b695b91bd8ae03eabb15bafe3cc1544413b9b1e
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.15.2
